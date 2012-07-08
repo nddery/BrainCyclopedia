@@ -1,7 +1,7 @@
 BrainCyclopedia
 ---------------
 
-BrainCyclopedia is a game that uses the New York Times article API.
+BrainCyclopedia is a game that uses the new york times article api.
 
 
 ### How to play ###
