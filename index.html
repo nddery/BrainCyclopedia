@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Braincyclopedia</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="styles/print/main.css" rel="stylesheet" type="text/css" media="print">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="js/belatedPNG.js"></script>
+<script>
+	DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+
+</head>
+
+<body>
+<div id="wrap">
+  <section id="top">
+    <nav id="mainnav">
+      <h1 id="sitename" class="logotext"> <a href="#">BRAINCYCLOPEDIA</a> </h1>
+    </nav>
+  </section>
+  <section id="page">
+    <header id="pageheader" class="homeheader">
+      <div class="container">
+        <div class="splash" id="splash">
+          <p>How to play:</p>
+          <p>&nbsp;</p>
+          <p>• Once the game commences, you will be presented with a date and sentences. <br>
+            • Make your choice according to the sentence that corresponds to the date shown.<br>
+            • Confirm that it's your final answer and click the button to submit your choice.<br>
+            • To find more information about a sentence you can position your cursor over it.<br>
+            • If your answer is correct, you advance to the next level. <br>
+            • If your answer is incorrect, you will loose one of your three lifes.</p>
+          <p>&nbsp;</p>
+          <p><a id="startgame">Start playing!</a></p>
+        </div>
+        <!-- end #splash --> 
+        
+        <!-- THE GAME -->
+        <div id="game">
+          <h2 id="question"><span id="date"></span></h2>
+          <!-- need a simple form that we will highjack with jQuery in the game.js --> 
+          <!-- this form will contain 4 possible answer (multiple choice - so 4 bullet) --> 
+          <!-- all text here is placeholder, will be changed once articles are retrieved -->
+          <form id="answers" name="answers" action="#" method="POST">
+            <label>
+              <input   type="radio" 
+                        id="answer1"
+                        name="answer" 
+                        value="bad" />
+              <span id="answer1text" class="tooltip"></span> </label>
+            <label>
+              <input   type="radio" 
+                        id="answer2"   
+                        name="answer" 
+                        value="bad" />
+              <span id="answer2text" class="tooltip"></span> </label>
+            <label>
+              <input   type="radio" 
+                        id="answer3"
+                        name="answer" 
+                        value="good" />
+              <span id="answer3text" class="tooltip"></span> </label>
+            <label>
+              <input   type="radio" 
+                        id="answer4"
+                        name="answer" 
+                        value="bad" />
+              <span id="answer4text" class="tooltip"></span> </label>
+            <input type="submit" id="submit" value="Final Answer" />
+          </form>
+          <!-- the points and life thingy -->
+          <p>Level: <span id="level">1</span></p>
+          <p>Life: <span id="life1" class="life alive"></span> <span id="life2" class="life alive"></span> <span id="life3" class="life alive"></span> </p>
+        </div>
+        <!-- end #game --> 
+        
+        <!-- GOOD ANSWER -->
+        <p id="goodanswer">Good Answer!</p>
+        
+        <!-- BAD ANSWER -->
+        <p id="badanswer">This is a hard game, try again...</p>
+        
+        <!-- GAME OVER -->
+        <div id="gameover">
+          <p>game over</p>
+          <p><a href="#" id="restart">Start again</a></p>
+        </div>
+      </div>
+    </header>
+    <div class="clear"></div>
+    <div class="clear"></div>
+  </section>
+  <div id="f-content"> <img src="images/flogo.png" width="96" height="125" id="footerimg">
+    <div id="social-links"> <a href="http://www.facebook.com/pages/Braincyclopedia/263725960337776" class="fblink"> Facebook</a> <a href="http://twitter.com/#!/braincyclopedia" class="twtlink"> Twitter </a> </div>
+    <div id="credits"></div>
+  </div>
+</div>
+<footer id="pagefooter"> </footer>
+</body>
+
+<!-- try to load jQuery from Google CDN's and fallback to local copy if necessary -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="library/js/jquery-1.6.4.min.js">\x3C/script>')</script>
+
+<!-- load the tooltip plugin -->
+<script src="library/js/jquery.tooltip.js"></script>
+
+<!-- instantiate the game -->
+<script src="js/nytgame.js"></script>
+</html>
+
+<!-- Localized -->

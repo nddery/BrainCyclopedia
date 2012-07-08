@@ -1,0 +1,42 @@
+@import url("styles/reset/reset.css");
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic);
+@import url("fonts/fertigo.css");
+
+html, body {}
+body {background: url(images/background-grey-image.jpg) repeat; background-color: #C7CCC1;font-family: 'Gentium Book Basic',serif; color:#3b2f27; position:relative;}
+h1 {font-size:3.2em; font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;}
+#sitename {font-weight:bold; color:#124d2c; text-shadow:#f5d18b 1px 1px 1px;  float:left; padding:9px 0 0 40px;}
+#sitename a {color:#124d2c; text-decoration:none;}
+#sitename.logotext a {display:block; color:#e6ded5; font-family:"Lobster"; text-shadow:#5f4d3b 1px 1px 1px;}
+#sitename.logotext a:hover {color:#e6ded5!important; text-shadow:#5f4d3b 1px 1px 1px!important; text-decoration:none!important;}
+#sitename a:hover {color:#2f3538;}
+a {color:#0d4022; text-decoration:none;}
+a:hover { text-decoration:underline;}
+#wrap {width:840px; margin:auto; background:url(images/wrapbg.png) center top no-repeat; padding-top:80px;}
+#top {background:url(images/top.png) no-repeat; height:66px; padding-top:38px;}
+#page {background: url(images/pagebg.png) repeat-y; padding:0 40px;}
+#pageheader {margin-bottom:15px;}
+.homeheader {background:url(images/header.jpg) no-repeat; height:292px;}
+.normalheader {background:url(images/normalheader.jpg) no-repeat; height:164px;}
+#contents {width:525px; float:left; padding-right:12px; background:url() right top repeat-y; min-height:500px; margin-bottom:10px; }
+#sidebar {width:200px; float:right; padding-left:10px; margin-bottom:10px;}
+#pagefooter {background:url(images/footerbg.png) left bottom repeat-x; height:200px; margin-top:-120px}
+#f-content {background:url(images/btmbg.png) no-repeat; width:840px; height:166px; margin:0 auto; position:relative;}
+#footerimg {position:absolute; right:20px; top:5px;}
+p, ul, ol {font-size:1.2em;}
+#page p {line-height:18px;}
+#page h2 {font:2.4em 'Lobster', Arial, Helvetica, sans-serif; color:#621907; text-shadow:#ead7be 1px 1px 1px;}
+#social-links{ padding:23px 0 0 45px; width:500px; height:40px; margin-bottom:3px;}
+#social-links a {display:block; width:42px; height:30px; text-indent:-4000px; overflow:hidden; float:left;}
+#social-links .fblink {background:url(images/fbbg.png) 0 3px no-repeat;}
+#social-links .twtlink {background:url(images/twtbg.png) 0 3px no-repeat;}
+#social-links a:hover {background-position:top!important;}
+
+.alignleft {float:left;}
+.alignright {float:right;}
+img.alignleft {background:#b79f80; border:solid 1px; border-color:#a38a68 #e1cdb2 #e1cdb2 #a38a68; padding:5px 6px 6px 5px; display:block; margin:0 10px 10px 0;}
+img.alignright {background:#b79f80; border:solid 1px; border-color:#a38a68 #e1cdb2 #e1cdb2 #a38a68; padding:5px 6px 6px 5px; display:block; margin:0 0 10px 10px;}
+.container{padding-top:30px;padding-bottom:30px;margin-left:10px;font-family: 'Gentium Book Basic',serif;font-size: 14px;}
+.splash{padding-top:10px;padding-bottom:30px;margin-left:30px;font-family: 'Gentium Book Basic',serif;font-size: 12.5px;}
+
