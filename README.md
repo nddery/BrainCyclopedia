@@ -1,4 +1,5 @@
-# BrainCyclopedia
+# [BrainCyclopedia](http://proj.nddery.ca/braincyclopedia/)
+
 [BrainCyclopedia](http://proj.nddery.ca/braincyclopedia/) is a game that uses the new york times article api.
 
 ## The Gameplay
