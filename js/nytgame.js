@@ -222,10 +222,9 @@ $(document).ready(function(){
                context: document.body,
                success: function(data, status, xhr){
                   // first parse the response to JSON
-                  console.log(data);
                   var json    = $.parseJSON(data);
                   // there is always only 10 results on the response (and why the hardcoded *10)
-                  var article = json.results[Math.floor(Math.random()*10)];
+                  var article = json.response.docs[Math.floor(Math.random()*10)];
                   console.log(article);
                   // write it down in the html
                   // input value
@@ -234,14 +233,14 @@ $(document).ready(function(){
                      // also add the title (the question)
                      // var date = article.date;
                      // $('#date').html(date);
-                     $('#date').html(article.publication_year);
+                     $('#date').html(article.pub_date.slice(0,4));
                   }else{
                      $('#answers #answer'+ x).prop('value', 'bad');
                   }
                   // label
-                  $('#answer'+ x +'text').html(article.title);
+                  $('#answer'+ x +'text').html(article.headline.main);
                   // the tooltip (body)
-                  $('#answer'+ x +'text').attr('title', article.body);
+                  $('#answer'+ x +'text').attr('title', article.lead_paragraph);
                   x++;
                } // end success
             }); // end $.ajax({})
